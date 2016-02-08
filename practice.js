@@ -288,6 +288,9 @@ function bindCard(person, creditcard) {
   for(var prop in person) {
     person[prop] = creditcard[prop];
   }
+  for(var key in creditcard) {
+    person[key] = creditcard[key];
+  }
   return obj;
 
 }
